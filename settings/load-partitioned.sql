@@ -8,6 +8,7 @@ set hive.exec.parallel=true;
 set hive.exec.reducers.max=${REDUCERS};
 set hive.stats.autogather=true;
 set hive.optimize.sort.dynamic.partition=true;
+set mapred.reduce.tasks = 400;
 
 -- set mapred.job.reduce.input.buffer.percent=0.0;
 -- set mapreduce.input.fileinputformat.split.minsize=240000000;
